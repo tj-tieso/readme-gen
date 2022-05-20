@@ -1,17 +1,7 @@
-// Table of Contents
-// Installation
-// Usage
-// License
-// Contributing
-// Tests
-// Questions (with email)
-
-// TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// // TODO: Create an array of questions for user input
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -80,7 +70,7 @@ const promptUser = () => {
       type: "checkbox",
       name: "license",
       message: "Which license applies to the project?",
-      choices: ["MIT", "Harvard", "Yale"],
+      choices: ["MIT", "Apache 2.0", "Boost"],
     },
     {
       type: "input",
@@ -115,6 +105,10 @@ const writeFile = (fileContent) => {
         ok: true,
         message: "File Created!",
       });
+
+      console.log(
+        "File Created. Check the dist folder for your new README.md!"
+      );
     });
   });
 };
@@ -132,4 +126,3 @@ promptUser()
   });
 
 // // Function call to initialize app
-// init();
