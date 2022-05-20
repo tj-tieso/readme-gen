@@ -33,6 +33,8 @@ Use npm to install inquirer from your terminal.
 
 ## Tests
 
+[Walkthrough Video](https://drive.google.com/file/d/17i59YApllMwVv7bWPU6QLOLQgDuC_PTU/view)
+
 <!-- insert screencastify link -->
 
 ## Contributors
